@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>      
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'img/oximetro.png' %}" class="d-block w-100" alt="oximetro" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+            <!--class="container-fluid bg-primary d-flex justify-content-center"-->
+          <h5 class="text-light">Función De Oxímetro</h5>
+          <p class="text-light">Tendrá la capacidad de medir la saturación de oxígeno en sangre.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'img/termometro.png' %}" class="d-block w-100" alt="termometro" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+          <h5 class="text-light">Función De Termómetro</h5>
+          <p class="text-light">Censará la temperatura corporal en todo momento..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/Dashboard.png' %}" class="d-block w-100" alt="Dashboard" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+          <h5 class="text-light">Dashboard</h5>
+          <p class="text-light">La información se brindará a un panel de control para que el medico pueda monitorear a varios pacientes.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/Estadistica.png' %}" class="d-block w-100" alt="Estadistica" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+          <h5 class="text-light">Estadística</h5>
+          <p class="text-light">Guardara datos estadísticos de los valores censados..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/MonitoreoRemoto.png' %}" class="d-block w-100" alt="MonitoreoRemoto" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+          <h5 class="text-light">Monitoreo Remoto</h5>
+          <p class="text-light">Al guardar los datos en la nube, tendrá acceso desde cualquier dispositivo..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/sincronizacion.png' %}" class="d-block w-100" alt="sincronizacion" width="512" height="576">
+        <div class="carousel-caption d-md-block bg-primary">
+          <h5 class="text-light">Sincronización</h5>
+          <p class="text-light">Si no cuanta con crédito, cuando acceda a una red wifi se actualizaran los datos en la nube.</p>
+        </div>
+      </div>           
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+ 
+{% endblock %}
