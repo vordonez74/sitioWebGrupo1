@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+<h1>Cada imagen tiene una historia para contar!</h1>
+<p>Colección de fotos dureante el cursado</p>    
+
+<div class="row text-center text-md-left">
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/soldandoDisplayOled.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Iot
+                Aire acondicionado de pared. Comandado desde internet</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/probandoDisplayOled.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Iot
+                Aire acondicionado de pared. Comandado desde internet</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/DisplayOled.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Agua Para Vaqueros
+                Automatización de la extracción de agua desde un pozo.</p>
+            </div>
+        </div>
+    </div>
+  
+</div>
+<div class="row text-center text-md-left">
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/aire.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Iot
+                Aire acondicionado de pared. Comandado desde internet</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/aire.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Iot
+                Aire acondicionado de pared. Comandado desde internet</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/vaqueros.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Agua Para Vaqueros
+                Automatización de la extracción de agua desde un pozo.</p>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+</div>
+{% endblock %}

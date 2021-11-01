@@ -1,26 +1,24 @@
 {% extends 'layout.html' %}
-{% load static %}
-
 {% block body %}
-
-
+<div class="container">
 <table class="table">
     <thead>
       <tr>
-        <th colspan="3" style="text-align: center;"><br><br><br>I.E.S. Nº 7 "Populorum Progressio - In. Te. La."<br> Filial LEDESMA<br><br><br></th>
+        <th colspan="3" style="text-align: center;"><br><br><br><h1>I.E.S. Nº 7 "Populorum Progressio - In. Te. La."</h1><br> Filial LEDESMA<br><br><br></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td colspan="3" style="text-align: center; color: blue; font-size:15px; font-family:Arial;"><br><br>TECNICATURA SUPERIOR EN AUTOMATIZACIÓN Y ROBÓTICA<br>PRCACTICA PROFESIONALIZANTE III – 2021<br><br><br></td>
+        <td colspan="3" style="text-align: center; color: blue; font-size:15px; font-family:Arial;"><br><br><h2>TECNICATURA SUPERIOR EN AUTOMATIZACIÓN Y ROBÓTICA</h2><br><h2>PRCACTICA PROFESIONALIZANTE III – 2021</h2><br><br><br></td>
       </tr>
       <tr>
         <td colspan="3">Proyecto:</td>
       </tr>
       <tr>
-        <td>Docente: Ing. Gastón Colque</td>
+        <td>Docente:</td>
         <td>Alumnos:<br>
-Hugo Sebastián Ordoñez<br> Victor Alejandro Ordoñez
+        <p class="text-primary">Victor Alejandro Ordoñez</p>
+        
 </td>
         <td>Fecha: 04/05/2021</td>
       </tr>
@@ -31,5 +29,211 @@ Hugo Sebastián Ordoñez<br> Victor Alejandro Ordoñez
       </tr>        
     </tbody>
   </table>
-   
+  <ol>
+  <li>
+    <h4>Descripción Del Proyecto(200 Palabras)</h4>
+    <p>Fundamentos del proyecto o una introducción. Similar a lo que se explica en la
+      propuesta TPNX. Acá deben responder las siguientes preguntas sin formularlas.
+      Que es el proyecto, para que sirve, cual es su función, donde se lo usa, cuando se
+      lo usa. Un resumen de al menos un párrafo o dos.</p>
+  </li>
+  <li><h4>Objetivo</h4>
+    <p>Resumido lo que se pretende solucionar o innovar con este proyecto</p>
+  </li>
+  <li>
+    <h4>Ámbito De Aplicación</h4>
+    <p>En qué lugares se puede usar su proyecto, comunidades, y/o espacios.</p>
+  </li>
+  <li>
+    <h4>Impacto Social(Beneficios)</h4>
+    <p>Acá ponen los beneficios que genera en la sociedad. No expresar en términos
+    económicos sino mas bien en el bien que le hace a la comunidad y a la sociedad.
+    Que problemática resuelve y que respuesta tenemos o tuvimos al compartilo con la
+    gente.</p>
+  </li>
+  <li>
+    <h4>Lista De Componentes</h4>
+    <ul>
+      <li>Nodemcu Esp8266 Ch340 Wifi Lua Gpio Uart I2c Pwm Arduino $ 793
+      </li>
+      <li>Sensor Max30102 Pulso Cardiaco Oximetria Arduino Raspberry $ 1789
+      </li>
+      <li>Display Oled 1.3 Blanco 128×64 I2c Delta Iot$ 1039<br>
+        matriz de un color de 128×64 puntos.<br>
+        driver interno es un SH1106 que se comunica por I2C<br>
+        conjunto funciona a 5 V<br>
+        consumo medio ronda los 80mA.<br>
+      </li>
+      <li>Lm35 Dz Sensor Temperatura -55 +150 Arduino Original Ptec $ 196<br>
+        Voltaje de Operación: 4V – 30V (5V recomendado)<br>
+        Rango de Trabajo: -55¿ hasta +150¿<br>
+        Precisión en el rango de -10°C hasta +85°C: ±0.5°C<br>
+        Pendiente: 10mV / ºC<br>
+        Bajo consumo energético: 60uA<br>
+        No necesita componentes adicionales<br>
+        Pines: +VCC, V salida, GND<br>
+        Baja impedancia de salida<br>
+      </li>
+      <li>Sensor Temperatura Termometro Infrarrojo Mlx90614 Gy 906 $ 1389<br>
+        Rango de temperatura:<br>
+        -40… + 125 Deg. C para la temperatura del sensor y<br>
+        -70… + 380 Deg. C para la temperatura del objeto.<br>
+        Precisión de 0.5 Deg. C (0… 50 Deg. C, tanto para Ta y A)<br>
+      </li>
+      <li>Batería Lipo 1000mah 3.7v $ 1900
+      </li>
+      <li>
+        Cargador De Baterias Litio Lipo Micro Usb Tp4056 Proteccion $ 198<br>
+        Hasta 1000mA de corriente de carga<br>
+        Tension de entrada 5..8 V<br>
+        LED de CARGA y CARGADO<br>
+        Dimensiones: 26×16 (mm)<br>
+        Conector microUSB<br>
+      </li>
+      <li>Fuente Dc Dc Step Up 0,9-5 V A Dc 5 V $ 249<br>
+        Voltaje de entrada 0,9 ~ 5 V, salida 5 V<br>
+        Corriente de salida máxima: 480 MA,<br>
+        Voltaje de inicio 0,9 V, corriente de salida 10MA<br>
+        Entrada 1-1,5 V, salida 5 V 50-110MA;<br>
+        Entrada 1,5-2 V, salida 5 V 110-160MA;<br>
+        Entrada 2-3 V, salida 5 V 160-400MA;<br>
+        Entrada por encima de 3 V, salida 5 V 400-500MA
+      </li>
+    </ul>
+  </li>
+  <li><h4>Costo Del Proyecto</h4>
+    <p>El precio lo pueden sacar de mercadolibre, busquen el precio más barato. Luego
+    agregar el costo de la mano de obra. Calculen el tiempo aproximado que llevaría
+    armar el proyecto, con todos los elementos y las herramientas en la mano. Con el
+    tiempo van a agregar un costo de mano de obra de $200 pesos la hora. Agreguen
+    también el costo del envío de los materiales hasta Jujuy</p>
+  </li>
+    <li><h4>Diagrama Funcional</h4>
+      <p>Este diagrama deberá ser realizado bajo la aplicación Fritzing</p>
+    </li>
+    <li><h4>Circuito Electrónico</h4>
+      <p>Si el proyecto lleva circuitería adicional deberán hacerse los circuitos. Este circuito</p>
+      deberá ser realizado bajo la aplicación Fritzing.</li>
+    <li><h4>Beneficio Del Proyecto</h4>
+        <p>Mas ande otro criollo pasa Martín Fierro ha de pasar, Nada la hace recular Ni las fantasmas lo espantan; Y dende que todos cantan Yo también quiero cantar.</p>   </li>
+  </ol>
+
+  10. Firmware
+  El firmware es el programa que se carga en la memoria del arduino.
+  Acá solo van a agregar las librerías que utilizaron para hacer el programa y el
+  nombre de las funciones usadas.
+  Ej:
+  #include<I2clcd.h>
+  #include<String.h>
+  Main()
+  Encenderled()
+  EnviarMensajeAPc()
+  11. Software
+El software es el programa que ve el usuario en la pc o en la notebook.
+Acá van a poner imágenes del software si es que usan alguno en su proyecto.
+12. Planificación
+Se deberá realizar una tabla con lo planificado para la realización del proyecto
+semana a semana y la división de tareas. Esto es una de las primeras cosas que
+tienen que hacer para llegar a la fecha y dividir el trabajo.
+Realizar el diagrama de Gantt con algún software o sino con un simple Excel.
+<table id="tabla1">
+  <tr>
+    <th>DESCRIPCION DE ACTIVIDAD</th>
+    <th>ASIGNADO A</th>
+    <th>FECHA INICIO</th>
+    <th>FECHA FIN</th>
+    <th>HORAS(mano de obra)</th>
+    <th>TIEMPO DE ENTREGA</TH>
+  </tr>
+  <tr>
+    <td>DIAGRAMA ELECTRONICO/CONSTRUTIVO</td>
+    <td>ALE O.</td>
+    <td>08/05/2021</td>
+    <td>15/05/2021</td>
+    <td>5 hs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>LISTA DE MATERIALES</td>
+    <td>SEBA O.</td>
+    <td>04/05/2021</td>
+    <td>07/05/2021</td>
+    <td>3 hs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>COSTO DE LOS MATERIALES</td>
+    <td>ALE O.</td>
+    <td>11/06/2021</td>
+    <td>11/06/2021</td>
+    <td>5 hs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>COMPRA DE MATERIALES</td>
+    <td>SEBA O.</td>
+    <td>11/06/2021</td>
+    <td>28/06/2021</td>
+    <td>2 semanas</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CONEXION ARDUINO, MODULOS</td>
+    <td>ALE O.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CONSTRUCCION</td>
+    <td>SEBA O.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PROGRAMACION - FIRMWARE</td>
+    <td>ALE O.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PRUEBAS</td>
+    <td>SEBA O.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>DOCUMENTACION</td>
+    <td>ALE O.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+</table>
+13. Desarrollo de la carcasa o acabado final
+Se muestra imágenes sobre el desarrollo realizado en Scketup.
+14. Conclusiones
+Lo que aprendieron haciendo el proyecto. Lo que los demás opinaron sobre el
+proyecto. Las cualidades, oportunidades que genera, etc.
+15. Revisiones del Firmware
+Aca se ponen las revisiones del firmware. Lo que fueron cambiando en el programa
+con la fecha, nro. de revisión y lo que se hizo.
+cuadro
+Fecha Revision Comentario
+29/03/20 1.0 Función Setup, puertos configurados y
+comunicación serie.
+10/04/20 1.1 Se agregan librerías de display Lcd, etc.
+16. bibliografía-SITOGRAFIAPoner
+links de paginas web, libros, y documentos que hayan usado para
+realizar el proyecto.
+</div>
 {% endblock %}

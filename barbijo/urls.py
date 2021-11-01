@@ -1,9 +1,11 @@
 from django.urls import path
 from . import views
 
-app_name = "barbijo"
-
 urlpatterns = [
     path('', views.index, name="index"),
-    path('tps/', views.tps, name="tps"),
+    path('ale', views.ale, name="ale"),
+    path('propuesta',views.propuesta,name="propuesta"),
+    path('about',views.about,name="about"),
+    path('galeria',views.galeria,name="galeria"),
+
 ]

@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+<div class="card" style="width: 18rem;">
+    <img src="{% static 'img/about.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Nuestra Historia
+        Estudiantes de la carrera de automatización y robótica.<br>
+        Fanáticos de la programación.</p>
+    </div>
+</div>
+<div class="row text-center text-md-left">
+    <h1>Algunos De Nuestros Proyectos</h1>
+    <p>Proyectos realizados durante el cursado de la Tecnicatura Superior en Automatización y robótica.</p>    
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/aire.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Iot
+                Aire acondicionado de pared. Comandado desde internet</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/vaqueros.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Agua Para Vaqueros
+                Automatización de la extracción de agua desde un pozo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/auto.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Auto comandado a control remoto.</p>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}
